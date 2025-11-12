@@ -191,7 +191,7 @@ Style: High-quality, professional, clean, well-lit, suitable for e-commerce.
 Output: Generate only the image, no text descriptions.`;
 
       try {
-        const imageGenModel = ai.getGenerativeModel({ model: 'imagen-3.0-generate-001' });
+        const imageGenModel = ai.getGenerativeModel({ model: ' gemini-2.5-flash-image-preview' });
         
         const result = await imageGenModel.generateContent(finalPrompt);
         
@@ -257,7 +257,7 @@ ${personRule}
             <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
               AI 상품 이미지 생성기
             </h1>
-            <p className="mt-3 text-lg text-slate-400">Google Imagen으로 멋진 쇼핑몰 상세컷을 만들어보세요</p>
+            <p className="mt-3 text-lg text-slate-400">Google NanoBanana으로 멋진 쇼핑몰 상세컷을 만들어보세요</p>
           </header>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
