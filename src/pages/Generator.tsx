@@ -1,5 +1,3 @@
-'ENDOFFILE'
-
 import React, { useState, useCallback, useMemo } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import JSZip from 'jszip';
@@ -229,7 +227,7 @@ ${colorRule}
     if (errorsEncountered > 0 && !error) {
       setError(`총 ${numImages}개 중 ${numImages - errorsEncountered}개의 이미지를 생성했습니다. ${errorsEncountered}개는 생성에 실패했습니다.`);
     }
-  }, [ai, apiKey, uploadedImages, prompt, numImages, error, defaultPrompt, includePerson, modelGender, modelAge, modelRefImage, backgroundRefImage, colorVariations]);
+  }, [ai, apiKey, uploadedImages, prompt, numImages, defaultPrompt, includePerson, modelGender, modelAge, modelRefImage, backgroundRefImage, colorVariations]);
 
   const systemInstructionForDisplay = useMemo(() => {
     const personRule = includePerson 
