@@ -1,3 +1,5 @@
+'ENDOFFILE'
+
 import React, { useState, useCallback, useMemo } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import JSZip from 'jszip';
@@ -448,4 +450,3 @@ ${personRule}
 };
 
 export default Generator;
-ENDOFFILE
