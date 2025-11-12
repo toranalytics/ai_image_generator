@@ -102,7 +102,7 @@ const Generator: React.FC = () => {
     if (!ai) return '';
     
     try {
-      const model = ai.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+      const model = ai.getGenerativeModel({ model: 'gemini-2.5-flash-image' });
       const imageData = image.base64.split(',')[1];
       
       const analysisPrompt = type === 'model' 
@@ -191,7 +191,7 @@ Style: High-quality, professional, clean, well-lit, suitable for e-commerce.
 Output: Generate only the image, no text descriptions.`;
 
       try {
-        const imageGenModel = ai.getGenerativeModel({ model: ' gemini-2.5-flash-image-preview' });
+        const imageGenModel = ai.getGenerativeModel({ model: 'gemini-2.5-flash-image' });
         
         const result = await imageGenModel.generateContent(finalPrompt);
         
